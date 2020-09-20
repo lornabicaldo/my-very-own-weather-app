@@ -1,0 +1,112 @@
+body {
+  font-family: "Ubuntu Condensed", sans-serif;
+}
+
+.weather-app {
+  border: 1px solid #12947f;
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 900px;
+  background: #fdd6bd;
+}
+
+h1 {
+  text-align: center;
+  color: #0a97b0;
+  font-weight: 100;
+  font-size: 50px;
+  line-height: 50px;
+  margin: 0;
+}
+
+h4 {
+  color: #158467;
+}
+
+.discription {
+  text-transform: capitalize;
+  color: #158467;
+  font-size: 35px;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  text-align: center;
+  color: #206a5d;
+  font-size: 20px;
+}
+
+.current-weather {
+  color: #158467;
+  font-size: 45px;
+}
+
+.fa-cloud-sun {
+  font-size: 100px;
+  margin: auto 20px;
+  color: #28df99;
+}
+
+.fa-cloud-showers-heavy {
+  font-size: 100px;
+  color: #28df99;
+}
+
+.fa-sun {
+  font-size: 100px;
+  color: #28df99;
+}
+
+.fa-cloud-sun-rain {
+  font-size: 100px;
+  color: #28df99;
+}
+
+.temperature {
+  font-size: 80px;
+  color: #206a5d;
+}
+
+.units {
+  font-size: 30px;
+  top: -30px;
+  position: relative;
+}
+
+.float-left-dayNight {
+  color: #206a5d;
+  font-size: 18px;
+}
+
+.card {
+  display: block;
+  margin: 30px auto;
+}
+
+.current-details {
+  font-size: 20px;
+  line-height: 25px;
+  color: #206a5d;
+}
+
+.card-title {
+  font-size: 18px;
+  color: #158467;
+}
+
+.card-group {
+  padding: 15px;
+}
+
+.search-form {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.accu-weather {
+  color: #158467;
+}

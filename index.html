@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/4736d52e29.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-app">
+            <form id="search-form">
+                <div class="row">
+                    <div class="col-6">
+                        <input type="search" id="search-input" placeholder="Seach a city" autofucos="on"
+                            autocomplete="off" class="form-control" />
+                    </div>
+                    <div class="col-3">
+                        <input type="submit" value="Search" class="form-control btn btn-info shadow-sm" />
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-success w-100" id="current-location-button">
+                            Current 📌
+                        </button>
+                    </div>
+
+                </div>
+            </form>
+            <h1 id="city">Stuttgart</h1>
+            <h2>
+                <div id="current-date">Friday, 21 August, 2020 10:30</div>
+            </h2>
+
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="clearfix">
+
+                        <div class="float-left">
+                            <span class="temperature" id="temperature"> </span>
+                            <span class="units">
+                                °C</span> <br />
+                            <span class="discription" id="temperature-discription"></span>
+                            <br />
+                            <span class="float-left-dayNight">
+                                <small>
+                                    Day 35°<i class="fas fa-arrow-up"></i> Night 20°<i
+                                        class="fas fa-arrow-down"></i></small>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card" style="width: 18rem">
+                        <div class="card-body">
+                            <span class="current-details">
+                                <ul>
+                                    <li>Humidity - <span id="humidity"></span>%</li>
+                                    <li>Wind - <span id="wind"></span>km/h</li>
+                                    <li>Pressure - 1,011 mBar</li>
+                                    <li>UV index - Low,0</li>
+                                    <li>Visibility - 16km</li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <h4> Next 5 days forecast</h4>
+                </div>
+                <div class="col-6">
+                    <small class="accu-weather"> <i class="fas fa-star-of-david"></i> AccuWeather</small>
+                </div>
+                <div class="card-group">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">Saturday,22 Aug <br /> Rain</h6>
+                            <p class="card-text"> <i class="fas fa-cloud-showers-heavy"></i> </p>
+                            <small class="text-muted">High 26° | Low 17°</small>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">Sunday, 23 Aug <br /> Partly cloudy</h6>
+                            <p class="card-text"><i class="fas fa-cloud-sun"></i></p>
+                            <small class="text-muted">High 23° | Low 13°</small>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">Monday,24 Aug <br /> Partly cloudy</h6>
+                            <p class="card-text"><i class="fas fa-cloud-sun"></i></p>
+                            <small class="text-muted">High 22° | Low 12°</small>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">Tuesday, 25 Aug <br /> Sunny</h6>
+                            <p class="card-text"><i class="fas fa-sun"></i></p>
+                            <small class="text-muted">High 37° | Low 20°</small>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">Wednesday, 26 Aug <br /> Scattered Shower</h6>
+                            <p class="card-text"><i class="fas fa-cloud-sun-rain"></i></p>
+                            <small class="text-muted">High 23° | Low 12°</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="src/index.js"></script>
+</body>
+
+</html>
